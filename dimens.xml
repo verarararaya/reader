@@ -1,0 +1,50 @@
+<resources>
+<!-- Default screen margins, per the Android Design guidelines. -->
+<dimen name="activity_horizontal_margin">0dp</dimen>
+<dimen name="activity_vertical_margin">0dp</dimen>
+<dimen name="common_margin_left">30dp</dimen>
+<dimen name="common_margin_right">30dp</dimen>
+
+<dimen name="common_linear_height">50dp</dimen>
+<dimen name="common_listitem_height">100dp</dimen>
+
+<!--Demand list displays the size of the picture -->
+<dimen name="common_demandlistpic_width">50dp</dimen>
+<dimen name="common_demandlistpic_height">50dp</dimen>
+<!--Demand list items according to height -->
+<dimen name="common_demandlist_item_height">80dp</dimen>
+<!--Scientific research list entry shows the size of the picture -->
+<dimen name="common_resnumlistpic_width">60dp</dimen>
+<dimen name="common_resnumlistpic_height">60dp</dimen>
+
+    <!--The article details the image size -->
+    <dimen name="common_paperlistpic_width">200dp</dimen>
+    <dimen name="common_paperlistpic_height">200dp</dimen>
+
+<dimen name="common_tab_textsize">18dp</dimen>
+<dimen name="common_newstitle_textsize">18dp</dimen>
+<dimen name="common_newsabstract_textsize">15dp</dimen>
+<dimen name="common_newsbottom_textsize">10dp</dimen>
+
+<dimen name="about_header_height">230dp</dimen>
+
+<dimen name="common_padding">5dp</dimen>
+<dimen name="common_margin">5dp</dimen>
+
+<!-- SchMMS -->
+<dimen name="common_toolbar">50dp</dimen>
+
+
+<!-- Page icon size -->
+<dimen name="common_main_icon">60dp</dimen>
+
+<!-- Page font size -->
+<dimen name="common_main_font">15dp</dimen>
+
+<!-- Around the page icon border size -->
+<dimen name="common_main_margin">70dp</dimen>
+
+
+
+</resources>
+

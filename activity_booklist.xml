@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:id="@+id/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@color/color_commen_toolbar"
+        >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="BookList"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+        	
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_serach_pubs"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/common_toolbar"
+            android:padding="10dp"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/et_pub_list_query"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:background="@drawable/drawable_edittext_bg" />
+
+            <ImageView
+                android:id="@+id/iv_pub_list_search"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/search" />
+        </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listv_list_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_serach_pubs" >
+</ListView>
+
+</RelativeLayout>
