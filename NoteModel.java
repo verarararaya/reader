@@ -15,13 +15,13 @@ public class NoteModel {
    )
 	   private long id;
    
-	   @Column(name = "TITLE",property = "NOT NULL")//
+	   @Column(name = "TITLE",property = "NOT NULL")//the content is not null
 	   private String title;
 	   	
-	   @Column(name = "CONTENT",property = "NOT NULL")//
+	   @Column(name = "CONTENT",property = "NOT NULL")//the content is not null
 	   private String content;
 	
-	   @Column(name = "DATE",property = "NOT NULL")//
+	   @Column(name = "DATE",property = "NOT NULL")//the content is not null
 	   private Date date;
 	   
 	   
