@@ -82,7 +82,7 @@ public class StringUtil {
     }
 
     /**
-     * ��
+     * ¨‡
      * @param mobiles
      * @return
      *//*
@@ -130,7 +130,7 @@ public class StringUtil {
 
 
     /**
-     *��PhoneNumberUtils.isUriNumber
+     *«¹PhoneNumberUtils.isUriNumber
      *
      * @param number the number for check
      * @return true if the string is a URI number
@@ -463,12 +463,7 @@ public class StringUtil {
         return result;
     }
 
-    /**
-     * 鐏忓摴yte閺佹壆绮嶉柅姘崇箖GZIP閸樺缂夐崥搴ｆ暏base64鏉烆剛鐖滈幋鎰摟缁楋缚锟�?
-     *
-     * @param byteArr
-     * @return
-     */
+    
     public static String compressByteArrayByGzip(byte[] byteArr) {
         String base64String = null;
         ByteArrayOutputStream os = null;
@@ -478,7 +473,7 @@ public class StringUtil {
             gos = new GZIPOutputStream(os);
             gos.write(byteArr);
             gos.finish();
-            //gos.flush();//android 4.4閹躲儵锟�??
+            //gos.flush();
             base64String = Base64.encodeToString(os.toByteArray(), Base64.DEFAULT);
         } catch (Exception e) {
             Log.e("compress", "IOException: ", e);
@@ -503,10 +498,7 @@ public class StringUtil {
     }
 
     /**
-     * base64閸欏秷袙閺嬫劕娴�?悧鍥ㄧウ閸氬定zip鐟欙絽锟�??
-     *
-     * @param zipText
-     * @return
+     
      */
     public static byte[] decompressToByteArrayByGzip(String zipText) {
         byte[] byteArr = null;
@@ -516,7 +508,7 @@ public class StringUtil {
         } catch (OutOfMemoryError e) {
             return byteArr;
         } catch (Exception e) {
-            //閸欏倹鏆熼柨娆掝�?
+            
             return byteArr;
         }
         GZIPInputStream gzipInputStream = null;
@@ -556,8 +548,7 @@ public class StringUtil {
     }
 
     /**
-     * 鐏忓棙鏋冩禒鎯版祮閹存亣ase64鐎涙顑佹稉锟�?(閻€劋绨崣鎴︼拷浣筋嚔闂婅櫕鏋冩禒锟�?)
-     *
+    
      * @param path
      * @return
      * @throws Exception
@@ -572,8 +563,7 @@ public class StringUtil {
     }
 
     /**
-     * 鐏忓摴ase64缂傛牜鐖滈崥搴ｆ畱鐎涙顑佹稉鑼舵祮閹存劖鏋冩禒锟�?
-     *
+    
      * @param base64Code
      * @throws Exception
      */
@@ -606,10 +596,10 @@ public class StringUtil {
     }
     
     public static String getSexByType(int sex){
-    	String res = "鐢锋��";
+    	String res = "é¢é”‹ï¿½ï¿½";
     	
     	if(sex==1){
-    		res = "濂虫��";
+    		res = "æ¿‚è™«ï¿½ï¿½";
     	}
     	
     	return res;
@@ -617,12 +607,12 @@ public class StringUtil {
     }
     
     public static String getUserTypeByType(int type){
-    	String res = "瀛﹀�?";
+    	String res = "ç€›ï¹€æ†?";
     	
     	if(type==2){
-    		res = "鏁欏�?";
+    		res = "éæ¬æ†?";
     	}else if(type==3){
-    		res = "绠＄悊鍛�?";
+    		res = "ç» ï¼„æ‚Šé›ï¿?";
     	}
     	
     	return res;
@@ -632,7 +622,7 @@ public class StringUtil {
     public static String getCourseLocat(String type){
     	
     	int i = Integer.parseInt(type);
-    	String[] array = {"鏁欏�?","鑷範�?��","�?煎爞","鎶ュ憡鍘�?"};
+    	String[] array = {"éæ¬î…?","é‘·îƒç¯„ç?¹ï¿½","ç»?ç…Žçˆž","éŽ¶ãƒ¥æ†¡é˜ï¿?"};
     	
     	return array[i-1];
     }
@@ -641,7 +631,7 @@ public class StringUtil {
     public static String getCourseType(String type){
     	
     	int i = Integer.parseInt(type);
-    	String[] array = {"涓撻鏁欒偛","缁忓父鏁欒偛","涓存椂鏁欒偛"};
+    	String[] array = {"æ¶“æ’»î•½éæ¬’å›","ç¼å¿“çˆ¶éæ¬’å›","æ¶“å­˜æ¤‚éæ¬’å›"};
     	
     	return array[i-1];
     }
